@@ -1,7 +1,7 @@
 <?php
 define("SERVER", "localhost");
 define("USERNAME", "root");
-define("PASSWORD", "");
+define("PASSWORD", "root");
 define("DATABASE", "ged");
 
 try {

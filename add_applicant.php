@@ -94,18 +94,18 @@
             $stmt->execute();
 
             // Go back to new applicant page with success message.
-            redirect_to("http://localhost/ged/new_applicant.php?success=1");
+            redirect_to("http://172.16.0.56/GED/new_applicant.php?success=1");
 
         } catch(PDOException $err) {
             
             error_log($err);
             // Go back to new applicant page with error.
-            redirect_to("http://localhost/ged/new_applicant.php?success=0");           
+            redirect_to("http://172.16.0.56/GED/new_applicant.php?success=0");           
             
         }
     } else {
 
-        redirect_to("http://localhost/ged");
+        redirect_to("http://172.16.0.56/GED");
 
     }
     
